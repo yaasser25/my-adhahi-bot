@@ -20,7 +20,9 @@ bot = telebot.TeleBot(TOKEN)
 # 1. الرد على /start
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    bot.reply_to(message, "✅ البوت شغال ومراقب للموقع بانتياز!")
+    bot.reply_to(message, "✅ البوت شغال بامتياز!
+🔍 البحث عن الولايات المتاحة متواصل حالياً...
+🚀 سأرسل لك تنبيهاً فور توفر أي حجز.")
 
 # 2. وظيفة مراقبة الموقع
 def check_adhahi():
